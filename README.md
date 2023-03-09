@@ -7,7 +7,7 @@ The loadstring for the script, which is auto-updated is:
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))
 ```
-If you want to use an individual version, you can check the [releases tab](https://github.com/game-hax/uca/releases).
+If you want to use an specific version, you can check the [releases tab](https://github.com/game-hax/uca/releases).
 
 ## What is U.C.A?
 
