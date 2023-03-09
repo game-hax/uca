@@ -1,258 +1,296 @@
-local UCA = Instance.new("ScreenGui")
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ChatTroll = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
 local Top = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
-local Close = Instance.new("TextButton")
-local Round = Instance.new("UICorner")
-local Round_2 = Instance.new("UICorner")
-local NoBottomRound = Instance.new("Frame")
-local Round_3 = Instance.new("UICorner")
-local MOTD = Instance.new("TextLabel")
-local Round_4 = Instance.new("UICorner")
-local Menu = Instance.new("Frame")
-local Round_5 = Instance.new("UICorner")
-local Chat = Instance.new("Frame")
-local Round_6 = Instance.new("UICorner")
-local MenuTitle = Instance.new("TextLabel")
-local Disguise = Instance.new("Frame")
-local Round_7 = Instance.new("UICorner")
-local PanelTitle = Instance.new("TextLabel")
-local Box = Instance.new("Frame")
-local Round_8 = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
-local Troll = Instance.new("Frame")
-local Round_9 = Instance.new("UICorner")
-local PanelTitle_2 = Instance.new("TextLabel")
-local Box_2 = Instance.new("Frame")
-local Round_10 = Instance.new("UICorner")
-local TextBox_2 = Instance.new("TextBox")
-local Send = Instance.new("TextButton")
-local Round_11 = Instance.new("UICorner")
-local Gaslight = Instance.new("ImageButton")
-local ChatSpoof = Instance.new("ImageButton")
-local Round_12 = Instance.new("UICorner")
-local Round_14 = Instance.new("UICorner")
-local Presets = Instance.new("Frame")
-local Round_13 = Instance.new("UICorner")
-local MenuTitle_2 = Instance.new("TextLabel")
-local Presets_2 = Instance.new("ScrollingFrame")
-local Preset = Instance.new("TextButton")
-local List = Instance.new("UIListLayout")
-local Preset_2 = Instance.new("TextButton")
-local Preset_3 = Instance.new("TextButton")
-local Preset_4 = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
 local Credits = Instance.new("TextLabel")
+local Chat = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Dropdown = Instance.new("Frame")
+local Btn = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local Ico = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local Value = Instance.new("TextLabel")
+local Holder = Instance.new("Frame")
+local Layout = Instance.new("UIListLayout")
+local Legacy = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIPadding = Instance.new("UIPadding")
+local New = Instance.new("TextButton")
+local Real = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local Fake = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextBox_2 = Instance.new("TextBox")
+local Send = Instance.new("Frame")
+local Btn_2 = Instance.new("TextButton")
+local Circle = Instance.new("ImageLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Presets = Instance.new("Frame")
+local Btn_3 = Instance.new("TextButton")
+local Circle_2 = Instance.new("ImageLabel")
+local UICorner_10 = Instance.new("UICorner")
+local Presets_2 = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Top_2 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local List = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding_2 = Instance.new("UIPadding")
 
 --Properties:
 
-UCA.Name = "UCA"
-UCA.Parent = game:GetService("CoreGui") -- game.Players.LocalPlayer:WaitForChild("PlayerGui")
-UCA.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-UCA.ResetOnSpawn = false
+ChatTroll.Name = "ChatTroll"
+ChatTroll.Parent = game:GetService("CoreGui")
+ChatTroll.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ChatTroll.DisplayOrder = 67
+ChatTroll.ResetOnSpawn = false
 
 Main.Name = "Main"
-Main.Parent = UCA
-Main.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Main.Parent = ChatTroll
+Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.600000024, 0, 0.299999982, 0)
-Main.Size = UDim2.new(0, 360, 0, 262)
+Main.ClipsDescendants = true
+Main.Position = UDim2.new(0.714853048, 0, 0.322327048, 0)
+Main.Size = UDim2.new(0, 300, 0, 225)
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = Main
 
 Top.Name = "Top"
 Top.Parent = Main
-Top.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-Top.BorderSizePixel = 0
-Top.Size = UDim2.new(1, 0, 0, 40)
+Top.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Top.Size = UDim2.new(1, 0, 0, 44)
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = Top
+
+Frame.Parent = Top
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 1, -16)
+Frame.Size = UDim2.new(1, 0, 0, 16)
 
 Title.Name = "Title"
 Title.Parent = Top
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
 Title.BorderSizePixel = 0
-Title.Position = UDim2.new(0, 10, 0, 5)
-Title.Size = UDim2.new(0.385714293, 100, 1, -10)
-Title.Font = Enum.Font.Ubuntu
-Title.Text = "Universal Chat Admin"
+Title.Position = UDim2.new(0, 16, 0.150000006, 0)
+Title.Size = UDim2.new(0, 200, 0.699999988, 0)
+Title.Font = Enum.Font.Gotham
+Title.Text = "Chat Admin"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextScaled = true
 Title.TextSize = 14.000
 Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
-Close.Name = "Close"
-Close.Parent = Top
-Close.BackgroundColor3 = Color3.fromRGB(255, 92, 108)
-Close.Position = UDim2.new(1, -30, 0.5, -5)
-Close.Size = UDim2.new(0, 10, 0, 10)
-Close.Font = Enum.Font.SourceSans
-Close.Text = ""
-Close.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close.TextSize = 14.000
+Exit.Name = "Exit"
+Exit.Parent = Top
+Exit.BackgroundColor3 = Color3.fromRGB(255, 82, 82)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0, 270, 0.5, -4)
+Exit.Size = UDim2.new(0, 8, 0, 8)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = ""
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextSize = 14.000
 
-Round.CornerRadius = UDim.new(0, 256)
-Round.Name = "Round"
-Round.Parent = Close
+UICorner_3.CornerRadius = UDim.new(0, 64)
+UICorner_3.Parent = Exit
 
-Round_2.Name = "Round"
-Round_2.Parent = Top
-
-NoBottomRound.Name = "NoBottomRound"
-NoBottomRound.Parent = Top
-NoBottomRound.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-NoBottomRound.BorderSizePixel = 0
-NoBottomRound.Position = UDim2.new(0, 0, 0.875, 0)
-NoBottomRound.Size = UDim2.new(1, 0, -0.875, 40)
-
-Round_3.Name = "Round"
-Round_3.Parent = Main
-
-MOTD.Name = "MOTD"
-MOTD.Parent = Main
-MOTD.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-MOTD.BorderSizePixel = 0
-MOTD.Position = UDim2.new(0.0428571478, 0, 0.166571438, 0)
-MOTD.Size = UDim2.new(0, 320, 0, 25)
-MOTD.Font = Enum.Font.SourceSans
-MOTD.Text = "[MOTD]: "..game:HttpGet("https://pastebin.com/raw/AvGYtGgz")
-MOTD.TextColor3 = Color3.fromRGB(255, 255, 255)
-MOTD.TextSize = 16.000
-MOTD.TextWrapped = true
-
-Round_4.Name = "Round"
-Round_4.Parent = MOTD
-
-Menu.Name = "Menu"
-Menu.Parent = Main
-Menu.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Menu.Position = UDim2.new(0.0413087644, 0, 0.289020628, 0)
-Menu.Size = UDim2.new(0, 320, 0, 163)
-
-Round_5.Name = "Round"
-Round_5.Parent = Menu
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0, 0, 1, -14)
+Credits.Size = UDim2.new(1, 0, 0, 12)
+Credits.Font = Enum.Font.Gotham
+Credits.Text = "by hovac, v2.0"
+Credits.TextColor3 = Color3.fromRGB(170, 170, 170)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
 
 Chat.Name = "Chat"
-Chat.Parent = Menu
-Chat.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
-Chat.Position = UDim2.new(0.0443750396, 0, 0.06709411, 0)
-Chat.Size = UDim2.new(0, 191, 0, 144)
+Chat.Parent = Main
+Chat.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Chat.Position = UDim2.new(0, 16, 0, 54)
+Chat.Size = UDim2.new(1, -32, 0, 150)
 
-Round_6.Name = "Round"
-Round_6.Parent = Chat
+UICorner_4.Parent = Chat
 
-MenuTitle.Name = "MenuTitle"
-MenuTitle.Parent = Chat
-MenuTitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-MenuTitle.BackgroundTransparency = 1.000
-MenuTitle.BorderSizePixel = 0
-MenuTitle.Position = UDim2.new(0, 8, 0, 2)
-MenuTitle.Size = UDim2.new(0, 81, 0, 17)
-MenuTitle.Font = Enum.Font.SourceSans
-MenuTitle.Text = "Fake chat:"
-MenuTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-MenuTitle.TextSize = 16.000
-MenuTitle.TextWrapped = true
-MenuTitle.TextXAlignment = Enum.TextXAlignment.Left
+Dropdown.Name = "Dropdown"
+Dropdown.Parent = Chat
+Dropdown.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Dropdown.BackgroundTransparency = 1.000
+Dropdown.Position = UDim2.new(0, 8, 0, 8)
+Dropdown.Size = UDim2.new(1, -16, 0, 32)
+Dropdown.ZIndex = 2
 
-Disguise.Name = "Disguise"
-Disguise.Parent = Chat
-Disguise.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Disguise.Position = UDim2.new(0, 8, 0, 20)
-Disguise.Size = UDim2.new(1, -16, 0.181999996, 20)
+Btn.Name = "Btn"
+Btn.Parent = Dropdown
+Btn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Btn.Size = UDim2.new(1, 0, 0, 24)
+Btn.ZIndex = 3
+Btn.AutoButtonColor = false
+Btn.Font = Enum.Font.SourceSans
+Btn.Text = ""
+Btn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Btn.TextSize = 14.000
 
-Round_7.CornerRadius = UDim.new(0, 6)
-Round_7.Name = "Round"
-Round_7.Parent = Disguise
+Title_2.Name = "Title"
+Title_2.Parent = Btn
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0, 10, 0, 0)
+Title_2.Selectable = true
+Title_2.Size = UDim2.new(0, 1, 1, 0)
+Title_2.ZIndex = 3
+Title_2.Font = Enum.Font.Gotham
+Title_2.Text = "Chat System"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 14.000
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
 
-PanelTitle.Name = "PanelTitle"
-PanelTitle.Parent = Disguise
-PanelTitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-PanelTitle.BackgroundTransparency = 1.000
-PanelTitle.BorderSizePixel = 0
-PanelTitle.Position = UDim2.new(0, 8, 0, 0)
-PanelTitle.Size = UDim2.new(0, 158, 0, 14)
-PanelTitle.Font = Enum.Font.SourceSans
-PanelTitle.Text = "Disguise:"
-PanelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-PanelTitle.TextScaled = true
-PanelTitle.TextSize = 16.000
-PanelTitle.TextWrapped = true
-PanelTitle.TextXAlignment = Enum.TextXAlignment.Left
-PanelTitle.TextYAlignment = Enum.TextYAlignment.Bottom
+Ico.Name = "Ico"
+Ico.Parent = Btn
+Ico.AnchorPoint = Vector2.new(1, 0.5)
+Ico.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ico.BackgroundTransparency = 1.000
+Ico.Position = UDim2.new(1, -10, 0.5, 0)
+Ico.Size = UDim2.new(0, 20, 0, 20)
+Ico.ZIndex = 3
+Ico.Image = "http://www.roblox.com/asset/?id=6034818379"
+Ico.ImageTransparency = 0.400
 
-Box.Name = "Box"
-Box.Parent = Disguise
-Box.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Box.BorderSizePixel = 0
-Box.Position = UDim2.new(0, 8, 0.172999993, 8)
-Box.Size = UDim2.new(1, -16, 0.273999989, 10)
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Btn
 
-Round_8.CornerRadius = UDim.new(0, 4)
-Round_8.Name = "Round"
-Round_8.Parent = Box
+Value.Name = "Value"
+Value.Parent = Btn
+Value.AnchorPoint = Vector2.new(1, 0.5)
+Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value.BackgroundTransparency = 1.000
+Value.Position = UDim2.new(1, -35, 0.5, 0)
+Value.Selectable = true
+Value.Size = UDim2.new(0, 1, 0, 32)
+Value.ZIndex = 3
+Value.Font = Enum.Font.Gotham
+Value.Text = "Dropdown"
+Value.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value.TextSize = 14.000
+Value.TextTransparency = 0.400
+Value.TextXAlignment = Enum.TextXAlignment.Right
 
-TextBox.Parent = Box
-TextBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Holder.Name = "Holder"
+Holder.Parent = Dropdown
+Holder.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Holder.BackgroundTransparency = 1.000
+Holder.ClipsDescendants = true
+Holder.Position = UDim2.new(0, 0, 0, 19)
+Holder.Size = UDim2.new(1, 0, 0, 5)
+Holder.ZIndex = 2
+
+Layout.Name = "Layout"
+Layout.Parent = Holder
+Layout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Legacy.Name = "Legacy"
+Legacy.Parent = Holder
+Legacy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Legacy.BackgroundTransparency = 1.000
+Legacy.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Legacy.BorderSizePixel = 0
+Legacy.Size = UDim2.new(1, 0, 0, 32)
+Legacy.ZIndex = 2
+Legacy.Font = Enum.Font.Gotham
+Legacy.Text = "Legacy"
+Legacy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Legacy.TextSize = 14.000
+Legacy.TextTransparency = 0.400
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = Holder
+
+UIPadding.Parent = Holder
+UIPadding.PaddingTop = UDim.new(0, 5)
+
+New.Name = "New"
+New.Parent = Holder
+New.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+New.BackgroundTransparency = 1.000
+New.BorderColor3 = Color3.fromRGB(27, 42, 53)
+New.BorderSizePixel = 0
+New.Size = UDim2.new(1, 0, 0, 32)
+New.ZIndex = 2
+New.Font = Enum.Font.Gotham
+New.Text = "New"
+New.TextColor3 = Color3.fromRGB(255, 255, 255)
+New.TextSize = 14.000
+New.TextTransparency = 0.400
+
+Real.Name = "Real"
+Real.Parent = Chat
+Real.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Real.Position = UDim2.new(0, 8, 0, 40)
+Real.Size = UDim2.new(1, -16, 0, 24)
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = Real
+
+TextBox.Parent = Real
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.BackgroundTransparency = 1.000
 TextBox.BorderSizePixel = 0
-TextBox.Position = UDim2.new(0, 2, 0, 1)
-TextBox.Size = UDim2.new(1, -4, 1, -2)
+TextBox.Position = UDim2.new(0, 8, 1, -19)
+TextBox.Size = UDim2.new(1, -14, 0, 14)
 TextBox.ClearTextOnFocus = false
-TextBox.Font = Enum.Font.SourceSans
-TextBox.PlaceholderColor3 = Color3.fromRGB(209, 209, 209)
-TextBox.PlaceholderText = "put anything here"
+TextBox.Font = Enum.Font.Gotham
+TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox.PlaceholderText = "Put your disguise here"
 TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 
-Troll.Name = "Troll"
-Troll.Parent = Chat
-Troll.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Troll.Position = UDim2.new(0, 8, 0, 70)
-Troll.Size = UDim2.new(1, -16, 0.182291672, 20)
+Fake.Name = "Fake"
+Fake.Parent = Chat
+Fake.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Fake.Position = UDim2.new(0, 8, 0, 71)
+Fake.Size = UDim2.new(1, -16, 0, 24)
 
-Round_9.CornerRadius = UDim.new(0, 6)
-Round_9.Name = "Round"
-Round_9.Parent = Troll
+UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = Fake
 
-PanelTitle_2.Name = "PanelTitle"
-PanelTitle_2.Parent = Troll
-PanelTitle_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-PanelTitle_2.BackgroundTransparency = 1.000
-PanelTitle_2.BorderSizePixel = 0
-PanelTitle_2.Position = UDim2.new(0, 8, 0, 0)
-PanelTitle_2.Size = UDim2.new(0, 158, 0, 14)
-PanelTitle_2.Font = Enum.Font.SourceSans
-PanelTitle_2.Text = "Troll:"
-PanelTitle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-PanelTitle_2.TextScaled = true
-PanelTitle_2.TextSize = 16.000
-PanelTitle_2.TextWrapped = true
-PanelTitle_2.TextXAlignment = Enum.TextXAlignment.Left
-PanelTitle_2.TextYAlignment = Enum.TextYAlignment.Bottom
-
-Box_2.Name = "Box"
-Box_2.Parent = Troll
-Box_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Box_2.BorderSizePixel = 0
-Box_2.Position = UDim2.new(0, 8, 0.172999993, 8)
-Box_2.Size = UDim2.new(1, -16, 0.273999989, 10)
-
-Round_10.CornerRadius = UDim.new(0, 4)
-Round_10.Name = "Round"
-Round_10.Parent = Box_2
-
-TextBox_2.Parent = Box_2
-TextBox_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextBox_2.Parent = Fake
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_2.BackgroundTransparency = 1.000
 TextBox_2.BorderSizePixel = 0
-TextBox_2.Position = UDim2.new(0, 2, 0, 1)
-TextBox_2.Size = UDim2.new(1, -4, 1, -2)
+TextBox_2.Position = UDim2.new(0, 8, 1, -19)
+TextBox_2.Size = UDim2.new(1, -16, 0, 14)
 TextBox_2.ClearTextOnFocus = false
-TextBox_2.Font = Enum.Font.SourceSans
-TextBox_2.PlaceholderColor3 = Color3.fromRGB(209, 209, 209)
-TextBox_2.PlaceholderText = "put anything here"
+TextBox_2.Font = Enum.Font.Gotham
+TextBox_2.MultiLine = true
+TextBox_2.PlaceholderText = "Put the \"fake\" message here"
 TextBox_2.Text = ""
 TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_2.TextScaled = true
@@ -262,270 +300,495 @@ TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
 
 Send.Name = "Send"
 Send.Parent = Chat
-Send.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Send.Position = UDim2.new(0, 8, 0.8359375, 0)
-Send.Size = UDim2.new(0, 72, 0, 18)
-Send.Font = Enum.Font.SourceSans
-Send.Text = "Send"
-Send.TextColor3 = Color3.fromRGB(255, 255, 255)
-Send.TextScaled = true
-Send.TextSize = 14.000
-Send.TextWrapped = true
+Send.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Send.BorderSizePixel = 0
+Send.Position = UDim2.new(0, 8, 0, 110)
+Send.Size = UDim2.new(0.694029868, -16, 0, 32)
 
-Round_11.CornerRadius = UDim.new(0, 4)
-Round_11.Name = "Round"
-Round_11.Parent = Send
+Btn_2.Name = "Btn"
+Btn_2.Parent = Send
+Btn_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Btn_2.BackgroundTransparency = 1.000
+Btn_2.Size = UDim2.new(1, 0, 1, 0)
+Btn_2.Font = Enum.Font.Gotham
+Btn_2.Text = "Send"
+Btn_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Btn_2.TextSize = 14.000
 
-Gaslight.Name = "Gaslight"
-Gaslight.Parent = Chat
-Gaslight.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Gaslight.BorderSizePixel = 0
-Gaslight.Position = UDim2.new(0.863874018, 0, 0.8359375, 0)
-Gaslight.Size = UDim2.new(0, 18, 0, 18)
-Gaslight.Image = "rbxassetid://9754130783"
 
-ChatSpoof.Name = "ChatSpoof"
-ChatSpoof.Parent = Chat
-ChatSpoof.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-ChatSpoof.BorderSizePixel = 0
-ChatSpoof.Position = UDim2.new(0.863874018, -24, 0.8359375, 0)
-ChatSpoof.Size = UDim2.new(0, 18, 0, 18)
-ChatSpoof.Image = "rbxassetid://9754130783"
 
-Round_12.CornerRadius = UDim.new(0, 4)
-Round_12.Name = "Round"
-Round_12.Parent = Gaslight
-
-Round_14.CornerRadius = UDim.new(0, 4)
-Round_14.Name = "Round"
-Round_14.Parent = ChatSpoof
+UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = Send
 
 Presets.Name = "Presets"
-Presets.Parent = Menu
-Presets.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
-Presets.Position = UDim2.new(0.669375062, 0, 0.0609591417, 0)
-Presets.Size = UDim2.new(0, 93, 0, 145)
+Presets.Parent = Chat
+Presets.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Presets.BorderSizePixel = 0
+Presets.Position = UDim2.new(0, 185, 0, 110)
+Presets.Size = UDim2.new(0.339552253, -16, 0, 32)
 
-Round_13.Name = "Round"
-Round_13.Parent = Presets
+Btn_3.Name = "Btn"
+Btn_3.Parent = Presets
+Btn_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Btn_3.BackgroundTransparency = 1.000
+Btn_3.Size = UDim2.new(1, 0, 1, 0)
+Btn_3.Font = Enum.Font.Gotham
+Btn_3.Text = "Presets"
+Btn_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Btn_3.TextSize = 14.000
 
-MenuTitle_2.Name = "MenuTitle"
-MenuTitle_2.Parent = Presets
-MenuTitle_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-MenuTitle_2.BackgroundTransparency = 1.000
-MenuTitle_2.BorderSizePixel = 0
-MenuTitle_2.Position = UDim2.new(0, 8, 0, 2)
-MenuTitle_2.Size = UDim2.new(0, 81, 0, 17)
-MenuTitle_2.Font = Enum.Font.SourceSans
-MenuTitle_2.Text = "Presets:"
-MenuTitle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-MenuTitle_2.TextSize = 16.000
-MenuTitle_2.TextWrapped = true
-MenuTitle_2.TextXAlignment = Enum.TextXAlignment.Left
+UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = Presets
 
 Presets_2.Name = "Presets"
-Presets_2.Parent = Presets
-Presets_2.Active = true
-Presets_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Presets_2.BackgroundTransparency = 1.000
+Presets_2.Parent = ChatTroll
+Presets_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 Presets_2.BorderSizePixel = 0
-Presets_2.Position = UDim2.new(0, 6, 0.15625, 0)
-Presets_2.Size = UDim2.new(1, -12, 0, 102)
-Presets_2.CanvasSize = UDim2.new(0, 0, 0, 0)
-Presets_2.ScrollBarThickness = 6
+Presets_2.ClipsDescendants = true
+Presets_2.Position = UDim2.new(0.0452739783, 0, 0.322327048, 0)
+Presets_2.Size = UDim2.new(0, 174, 0, 225)
 
-Preset.Name = "Preset"
-Preset.Parent = Presets_2
-Preset.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Preset.BackgroundTransparency = 1.000
-Preset.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Preset.BorderSizePixel = 0
-Preset.Size = UDim2.new(1, -8, 0, 14)
-Preset.Font = Enum.Font.SourceSans
-Preset.Text = "System msg"
-Preset.TextColor3 = Color3.fromRGB(204, 204, 204)
-Preset.TextScaled = true
-Preset.TextSize = 14.000
-Preset.TextWrapped = true
-Preset.TextXAlignment = Enum.TextXAlignment.Left
-Preset:SetAttribute("Disguise","")
-Preset:SetAttribute("Troll","[Server]: put anything here")
+UICorner_11.CornerRadius = UDim.new(0, 12)
+UICorner_11.Parent = Presets_2
+
+Top_2.Name = "Top"
+Top_2.Parent = Presets_2
+Top_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Top_2.Size = UDim2.new(1, 0, 0, 44)
+
+UICorner_12.CornerRadius = UDim.new(0, 12)
+UICorner_12.Parent = Top_2
+
+Frame_2.Parent = Top_2
+Frame_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 1, -16)
+Frame_2.Size = UDim2.new(1, 0, 0, 16)
+
+Title_3.Name = "Title"
+Title_3.Parent = Top_2
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0, 16, 0.150000006, 0)
+Title_3.Size = UDim2.new(0, 200, 0.699999988, 0)
+Title_3.Font = Enum.Font.Gotham
+Title_3.Text = "Presets"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+Title_3.TextXAlignment = Enum.TextXAlignment.Left
 
 List.Name = "List"
 List.Parent = Presets_2
-List.SortOrder = Enum.SortOrder.LayoutOrder
-List.Padding = UDim.new(0, 1)
+List.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+List.Position = UDim2.new(0, 16, 0, 58)
+List.Size = UDim2.new(1, -32, 0, 150)
 
-Preset_2.Name = "Preset"
-Preset_2.Parent = Presets_2
-Preset_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Preset_2.BackgroundTransparency = 1.000
-Preset_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Preset_2.BorderSizePixel = 0
-Preset_2.Size = UDim2.new(1, -8, 0, 14)
-Preset_2.Font = Enum.Font.SourceSans
-Preset_2.Text = "Team join msg"
-Preset_2.TextColor3 = Color3.fromRGB(204, 204, 204)
-Preset_2.TextScaled = true
-Preset_2.TextSize = 14.000
-Preset_2.TextWrapped = true
-Preset_2.TextXAlignment = Enum.TextXAlignment.Left
-Preset_2:SetAttribute("Disguise","")
-Preset_2:SetAttribute("Troll","{Team} You are now on the 'put anything here' team.")
+UICorner_13.Parent = List
 
-Preset_3.Name = "Preset"
-Preset_3.Parent = Presets_2
-Preset_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Preset_3.BackgroundTransparency = 1.000
-Preset_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Preset_3.BorderSizePixel = 0
-Preset_3.Size = UDim2.new(1, -8, 0, 14)
-Preset_3.Font = Enum.Font.SourceSans
-Preset_3.Text = "Shutdown cmd"
-Preset_3.TextColor3 = Color3.fromRGB(204, 204, 204)
-Preset_3.TextScaled = true
-Preset_3.TextSize = 14.000
-Preset_3.TextWrapped = true
-Preset_3.TextXAlignment = Enum.TextXAlignment.Left
-Preset_3:SetAttribute("Disguise",";shutdown")
-Preset_3:SetAttribute("Troll","[Server]: Shutting down in 60 seconds")
-Preset_3:SetAttribute("ForceGaslight",false)
+ScrollingFrame.Parent = List
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Size = UDim2.new(1, -4, 1, 0)
+ScrollingFrame.ScrollBarThickness = 6
 
-Preset_4.Name = "Preset"
-Preset_4.Parent = Presets_2
-Preset_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Preset_4.BackgroundTransparency = 1.000
-Preset_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Preset_4.BorderSizePixel = 0
-Preset_4.Size = UDim2.new(1, -8, 0, 14)
-Preset_4.Font = Enum.Font.SourceSans
-Preset_4.Text = "Fake friend join"
-Preset_4.TextColor3 = Color3.fromRGB(204, 204, 204)
-Preset_4.TextScaled = true
-Preset_4.TextSize = 14.000
-Preset_4.TextWrapped = true
-Preset_4.TextXAlignment = Enum.TextXAlignment.Left
-Preset_4:SetAttribute("Disguise","")
-Preset_4:SetAttribute("Troll","Your friend ____ has joined the experience.")
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
 
-Credits.Name = "Credits"
-Credits.Parent = Main
-Credits.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Credits.BackgroundTransparency = 1.000
-Credits.BorderSizePixel = 0
-Credits.Position = UDim2.new(0.042857144, 0, 0.93599999, 0)
-Credits.Size = UDim2.new(0, 320, 0, 14)
-Credits.Font = Enum.Font.SourceSans
-Credits.Text = "Created by hovac  |  version 1.1b"
-Credits.TextColor3 = Color3.fromRGB(204, 204, 204)
-Credits.TextScaled = true
-Credits.TextSize = 16.000
-Credits.TextWrapped = true
+UIPadding_2.Parent = ScrollingFrame
+UIPadding_2.PaddingTop = UDim.new(0, 5)
 
 -- Scripts:
 
-local function ODSHNH_fake_script() -- Main.Manager 
+local function UPRZQSQ_fake_script() -- Main.Smooth 
 	local script = Instance.new('LocalScript', Main)
 
-	local Gui = script.Parent.Parent
-	local Main = Gui.Main
-	local Menu = Main.Menu
-	local Top = Main.Top
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
 	
-	local CloseBtn = Top.Close
+	local gui = script.Parent
 	
-	local ChatMenu = Menu.Chat
-	local DisguiseText = ChatMenu.Disguise.Box.TextBox
-	local TrollText = ChatMenu.Troll.Box.TextBox
-	local GaslightButton = ChatMenu.Gaslight
-	local ChatSpoofButton = ChatMenu.ChatSpoof
-	local Send = ChatMenu.Send
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
 	
-	local PresetsMenu = Menu.Presets
-	local Presets = PresetsMenu.Presets
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
 	
-	local Troll=function(b,a)local c=b..string.sub("                                                                                                                                                           ",#b)..a;game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(c,"All")return c end;
-	local Gaslight=function(b,d)coroutine.wrap(function()for i=1,10,1 do local e=game:GetService("Players").LocalPlayer;for f,g in pairs(e.PlayerGui.Chat.Frame.ChatChannelParentFrame.Frame_MessageLogDisplay.Scroller:GetChildren())do if g:IsA("Frame")then local h=e.DisplayName or e.name;local g=g:FindFirstChild("TextLabel")if g:FindFirstChild("TextButton")then local i=string.sub(g.Text,(#g.TextButton.Text+2)*2)if i==b then g.TextButton:Destroy()game:GetService("RunService").RenderStepped:Connect(function()pcall(function()g.Text=d;g.Parent.Size=UDim2.new(1,0,0,18) end) end)end end end end;wait(.05)end end)()end
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
 	
-	CloseBtn.MouseButton1Down:Connect(function()
-		Main:TweenPosition(UDim2.new(0.6,0,-1,0))
-		wait(1)
-		Gui:Destroy()
-	end)
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
 	
-	GaslightButton.MouseButton1Down:Connect(function()
-		if GaslightButton.Image == "rbxassetid://9754130783" then
-			GaslightButton.Image = ""
-		else
-			GaslightButton.Image = "rbxassetid://9754130783"
-		end
-	end)
-	ChatSpoofButton.MouseButton1Down:Connect(function()
-		if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-			ChatSpoofButton.Image = ""
-		else
-			ChatSpoofButton.Image = "rbxassetid://9754130783"
-		end
-	end)
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
 	
-	local PlaceHoldOrText=function(a,b)if a==""or nil then return b end;return a end
-	-- get it, the function is placeholdertext but its placeholdORtext cause it compares two strings on whether to use the placeholdertext or the normal one 😂😂😂😂😂😂😂
-	
-	local bubbleog =  game:GetService("Chat").BubbleChatEnabled
-	Send.MouseButton1Down:Connect(function()
-	    if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = false
-		end
-	    local DisguiseText = string.sub(PlaceHoldOrText(DisguiseText.Text, DisguiseText.PlaceholderText), 0, 152)
-		local TrollText = string.sub(PlaceHoldOrText(TrollText.Text, TrollText.PlaceholderText), 0, 152)
-		if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = false
-		end
-		if GaslightButton.Image == "rbxassetid://9754130783" then
-		    if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = false
-		    end
-	if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = false
-		end
-			Gaslight(Troll(DisguiseText,TrollText.." "),TrollText.." ")
-		else
-		    if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = false
-		    end
-	if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = false
-		end
-			Troll(DisguiseText,TrollText)
-		end
-		if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = false
-		end
-		
-		if bubbleog == true and ChatSpoofButton.Image == "rbxassetid://9754130783" then
-    	    if GaslightButton.Image == "rbxassetid://9754130783" then else
-    	        game:GetService("Chat").BubbleChatEnabled = false
-    	        game:GetService("Chat"):Chat(game:GetService("Players").LocalPlayer.Character.Head,DisguiseText,Enum.ChatColor.White)
-    	        game:GetService("Chat").BubbleChatEnabled = false
-    	    end
-		end
-		if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = false
-		end
-    if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = false
-		end
-		wait(.3)
-		if ChatSpoofButton.Image == "rbxassetid://9754130783" then
-		game:GetService("Chat").BubbleChatEnabled = bubbleog
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
 		end
 	end)
 	
-	local UpdatePresets=function()Presets.CanvasSize=UDim2.new(0,0,0,(#Presets:GetChildren()-1)*15)for a,b in pairs(Presets:GetChildren())do if b:IsA("TextButton")then pcall(function()b.MouseButton1Down:Connect(function()local c=b:GetAttribute("Disguise")local d=b:GetAttribute("Troll")DisguiseText.Text=c;TrollText.Text=d;pcall(function()if b:GetAttribute("ForceGaslight")then if b:GetAttribute("ForceGaslight")==true then GaslightButton.Image="rbxassetid://9754130783"else GaslightButton.Image=""end end end)end)end)end end end
-	Presets.ChildAdded:Connect(UpdatePresets)
-	Presets.ChildRemoved:Connect(UpdatePresets)
-	UpdatePresets()
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
 	
-	local a=game:GetService("UserInputService")local b=game:GetService("RunService")local c;local d;local e;local f;function Lerp(g,h,i)return g+(h-g)*i end;local j;local k;local l=8;function Update(m)if not f then return end;if not c and k then Main.Position=UDim2.new(f.X.Scale,Lerp(Main.Position.X.Offset,k.X.Offset,m*l),f.Y.Scale,Lerp(Main.Position.Y.Offset,k.Y.Offset,m*l))return end;local n=j-a:GetMouseLocation()local o=f.X.Offset-n.X;local p=f.Y.Offset-n.Y;k=UDim2.new(f.X.Scale,o,f.Y.Scale,p)Main.Position=UDim2.new(f.X.Scale,Lerp(Main.Position.X.Offset,o,m*l),f.Y.Scale,Lerp(Main.Position.Y.Offset,p,m*l))end;Main.InputBegan:Connect(function(q)if q.UserInputType==Enum.UserInputType.MouseButton1 or q.UserInputType==Enum.UserInputType.Touch then c=true;e=q.Position;f=Main.Position;j=a:GetMouseLocation()q.Changed:Connect(function()if q.UserInputState==Enum.UserInputState.End then c=false end end)end end)Main.InputChanged:Connect(function(q)if q.UserInputType==Enum.UserInputType.MouseMovement or q.UserInputType==Enum.UserInputType.Touch then d=q end end)b.Heartbeat:Connect(Update)
+	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(ODSHNH_fake_script)()
+coroutine.wrap(UPRZQSQ_fake_script)()
+local function UNWSZB_fake_script() -- Exit.Close 
+	local script = Instance.new('LocalScript', Exit)
+
+	local v = false
+	script.Parent.MouseButton1Down:Connect(function()
+		if v == true then
+			return
+		end
+		v = true
+		script.Parent.Parent.Parent:TweenPosition(UDim2.new(.2,0,-1,-36))
+		wait(1)
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(UNWSZB_fake_script)()
+local function RCEU_fake_script() -- Btn_2.Ripple 
+	local script = Instance.new('LocalScript', Btn_2)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local function CircleClick(Button, X, Y)
+		coroutine.resume(coroutine.create(function()
+	
+			Button.ClipsDescendants = true
+	
+			local Circle = script:WaitForChild("Circle"):Clone()
+			Circle.Parent = Button
+			local NewX = X - Circle.AbsolutePosition.X
+			local NewY = Y - Circle.AbsolutePosition.Y
+			Circle.Position = UDim2.new(0, NewX, 0, NewY)
+	
+			local Size = 0
+			if Button.AbsoluteSize.X > Button.AbsoluteSize.Y then
+				Size = Button.AbsoluteSize.X*1.5
+			elseif Button.AbsoluteSize.X < Button.AbsoluteSize.Y then
+				Size = Button.AbsoluteSize.Y*1.5
+			elseif Button.AbsoluteSize.X == Button.AbsoluteSize.Y then																										Size = Button.AbsoluteSize.X*1.5
+			end
+	
+			local Time = 0.5
+			Circle:TweenSizeAndPosition(UDim2.new(0, Size, 0, Size), UDim2.new(0.5, -Size/2, 0.5, -Size/2), "Out", "Quad", Time, false, nil)
+			for i=0.8,1,0.01 do
+				Circle.ImageTransparency = i
+				wait(Time/10)
+			end
+			Circle:Destroy()
+	
+		end))
+	end
+	
+	script.Parent.MouseButton1Down:connect(function()
+		CircleClick(script.Parent, Mouse.X, Mouse.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(RCEU_fake_script)()
+local function NIACXMB_fake_script() -- Chat.Manager 
+	local script = Instance.new('LocalScript', Chat)
+
+	local r
+	local function s(v)
+		script.Parent.Dropdown.Btn.Value.Text = v.Text
+		r = v.Name
+		if r == "Legacy" then
+			script.Parent.Fake.TextBox.MultiLine = false
+		elseif r == "New" then
+			script.Parent.Fake.TextBox.MultiLine = true
+		end
+	end
+	
+	if game:GetService("TextChatService").ChatVersion == Enum.ChatVersion.TextChatService then
+		s(script.Parent.Dropdown.Holder.New)
+	else
+		s(script.Parent.Dropdown.Holder.Legacy)
+	end 
+	
+	local enabled = false
+	local enabling = false
+	script.Parent.Dropdown.Btn.MouseButton1Down:Connect(function()
+		if enabling == true then
+			return
+		end
+		enabling = true
+		if enabled == false then
+			script.Parent.Dropdown.Holder.Transparency = 0
+			coroutine.wrap(function()
+				for i = 0, 180, 10 do
+					script.Parent.Dropdown.Btn.Ico.Rotation = i
+					wait()
+				end
+			end)()
+			local u = 0
+			for i,v in pairs(script.Parent.Dropdown.Holder:GetChildren()) do
+				if v:IsA("TextButton") then
+					u = u + 1
+				end
+			end
+			script.Parent.Dropdown.Holder:TweenSize(UDim2.new(1,0,0,10+(32*u)))
+			wait(1)
+		else
+			coroutine.wrap(function()
+				for i = 180, 0, -10 do
+					script.Parent.Dropdown.Btn.Ico.Rotation = i
+					wait()
+				end
+			end)()
+			script.Parent.Dropdown.Holder:TweenSize(UDim2.new(1,0,0,5))
+			wait(1)
+			script.Parent.Dropdown.Holder.Transparency = 1
+		end
+		enabled = not enabled
+	
+		enabling = false
+	end)
+	for i,v in pairs(script.Parent.Dropdown.Holder:GetChildren()) do
+		if v:IsA("TextButton") then
+			v.MouseButton1Down:Connect(function()
+				s(v)
+			end)
+		end
+	end
+	
+	script.Parent.Send.Btn.MouseButton1Down:Connect(function()
+		local real = script.Parent.Real.TextBox.Text
+		local fake = script.Parent.Fake.TextBox.Text
+		if r == "New" then
+			fake = string.gsub(fake, "\n", "\r")
+			game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(real..'\r'..fake)
+		elseif r == "Legacy" then
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(real..string.sub("                                                                                                                                                           ",#real)..fake,"All")
+		end
+	end)
+	
+	script.Parent.Parent.Parent.Presets.Visible = false
+	script.Parent.Presets.Btn.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Presets.Visible = not script.Parent.Parent.Parent.Presets.Visible
+	end)
+end
+
+coroutine.wrap(NIACXMB_fake_script)()
+local function KMAJZP_fake_script() -- Btn_3.Ripple 
+	local script = Instance.new('LocalScript', Btn_3)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local function CircleClick(Button, X, Y)
+		coroutine.resume(coroutine.create(function()
+	
+			Button.ClipsDescendants = true
+	
+			local Circle = script:WaitForChild("Circle"):Clone()
+			Circle.Parent = Button
+			local NewX = X - Circle.AbsolutePosition.X
+			local NewY = Y - Circle.AbsolutePosition.Y
+			Circle.Position = UDim2.new(0, NewX, 0, NewY)
+	
+			local Size = 0
+			if Button.AbsoluteSize.X > Button.AbsoluteSize.Y then
+				Size = Button.AbsoluteSize.X*1.5
+			elseif Button.AbsoluteSize.X < Button.AbsoluteSize.Y then
+				Size = Button.AbsoluteSize.Y*1.5
+			elseif Button.AbsoluteSize.X == Button.AbsoluteSize.Y then																										Size = Button.AbsoluteSize.X*1.5
+			end
+	
+			local Time = 0.5
+			Circle:TweenSizeAndPosition(UDim2.new(0, Size, 0, Size), UDim2.new(0.5, -Size/2, 0.5, -Size/2), "Out", "Quad", Time, false, nil)
+			for i=0.8,1,0.01 do
+				Circle.ImageTransparency = i
+				wait(Time/10)
+			end
+			Circle:Destroy()
+	
+		end))
+	end
+	
+	script.Parent.MouseButton1Down:connect(function()
+		CircleClick(script.Parent, Mouse.X, Mouse.Y) 
+	end)
+	
+	
+	
+end
+coroutine.wrap(KMAJZP_fake_script)()
+local function XCOYQZF_fake_script() -- Presets_2.Smooth 
+	local script = Instance.new('LocalScript', Presets_2)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(XCOYQZF_fake_script)()
+
+Circle.Name = "Circle"
+Circle.Parent = Btn_3:WaitForChild("LocalScript")
+Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle.BackgroundTransparency = 1.000
+Circle.ZIndex = 10
+Circle.Image = "rbxassetid://266543268"
+Circle.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Circle.ImageTransparency = 0.800
+
+Circle_2.Name = "Circle"
+Circle_2.Parent = Btn_2:WaitForChild("LocalScript")
+Circle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_2.BackgroundTransparency = 1.000
+Circle_2.ZIndex = 10
+Circle_2.Image = "rbxassetid://266543268"
+Circle_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Circle_2.ImageTransparency = 0.800
+
+-- PRESETS
+
+local TextButton = Instance.new("TextButton")
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, -10, 0, 12)
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = "Fake admin all"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	Real.TextBox.Text = ";admin all"
+	Fake.TextBox.Text = "{Team} You are now on the 'Admins' team."
+end)
+
+local TextButton = Instance.new("TextButton")
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, -10, 0, 12)
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = "Fake shutdown"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	Real.TextBox.Text = ";shutdown"
+	Fake.TextBox.Text = "[Server]: Shutting down in 60 seconds"
+end)
+
+local TextButton = Instance.new("TextButton")
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, -10, 0, 12)
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = "Team join"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	Real.TextBox.Text = ""
+	Fake.TextBox.Text = "{Team} You are now on the 'put anything here' team."
+end)
+
+local TextButton = Instance.new("TextButton")
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, -10, 0, 12)
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = "System message"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	Real.TextBox.Text = ""
+	Fake.TextBox.Text = "[Server]: "
+end)
