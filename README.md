@@ -5,7 +5,7 @@
 You can download the [minified](https://github.com/game-hax/uca/blob/main/release/uca.min.lua) or [normal](https://github.com/game-hax/uca/blob/main/release/uca.lua) script.
 The loadstring for the script, which is auto-updated is:
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))()
 ```
 If you want to use an specific version, you can check the [releases tab](https://github.com/game-hax/uca/releases).
 
